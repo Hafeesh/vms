@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  vms:
+    container_name: vms
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
